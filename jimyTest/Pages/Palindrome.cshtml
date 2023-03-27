@@ -1,0 +1,84 @@
+﻿@page
+@model jimyTest.Pages.PalindromeModel
+@{
+    ViewData["Title"] = "Palindromo";
+
+}
+
+<h1>Palíndromos</h1>
+
+<h4>Palíndromos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+
+        <div class="form-group">
+            <label class="control-label"></label>
+            <input id="textoPalindromo" class="form-control" />
+            <input type="button" value="Probar" onclick="Probar()"/>
+        </div>
+        <div class="form-group">
+            <label id="labelResultados"></label>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function Probar() {
+        var textoTot = document.getElementById("textoPalindromo").value;
+        var resultado = document.getElementById("labelResultados");
+        var visor = "";
+        var contador = 0;
+
+        
+        var k = 0;
+        //visor = textoTot.split(" ");
+        for (k = 0; k < textoTot.split(" ").length; k++) {
+
+            var j = 0;
+            textoTotal = textoTot.split(" ")[k];
+            //visor += textoTotal + "<br />";
+            do {
+
+                var texto = obtenerTexto(textoTotal, j);
+                var palabra = "";
+                var palabraContraria = "";
+                for (var i = 0; i <= texto.length - 1; i++) {
+                    palabra += texto[i];
+
+                    palabraContraria = textoContrario(texto, i);
+
+                    //visor += palabra + " : " + palabraContraria + "<br/>";
+                    if (palabra.length > 1 && palabraContraria.length > 1 && palabra === palabraContraria) {
+                        visor += palabra + "<br />";
+                        contador++;
+                    }
+                }
+                j++;
+            } while (j < textoTotal.length);
+        }
+        resultado.innerHTML = contador + "<br /><br />" + visor;
+    }
+
+    function obtenerTexto(texto, pos) {
+        var palabra = "";
+        var i = pos;
+        do {
+            palabra += texto[i];
+            i++;
+        } while (i < texto.length);
+
+        return palabra;
+    }
+
+    function textoContrario(texto, i) {
+
+        var palabra = "";
+        j = i;
+        do {
+            palabra += texto[j];
+            j--;
+        } while (j >= 0);
+
+        return palabra;
+    }
+</script>

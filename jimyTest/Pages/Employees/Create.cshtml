@@ -1,0 +1,83 @@
+@page
+@model jimyTest.Pages.Employees.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Employee</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Employee.DPI" class="control-label"></label>
+                <input asp-for="Employee.DPI" class="form-control" />
+                <span asp-validation-for="Employee.DPI" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Employee.childrenNumber" class="control-label"></label>
+                <input id="childrenNumber" asp-for="Employee.childrenNumber" class="form-control" value="0"/>
+                <span asp-validation-for="Employee.childrenNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Employee.baseSalary" class="control-label"></label>
+                <input id="baseSalary" asp-for="Employee.baseSalary" class="form-control" onkeyup="calcular()"/>
+                <span asp-validation-for="Employee.baseSalary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Employee.decreeBond" class="control-label"></label>
+                <input id="decreeBond" asp-for="Employee.decreeBond" class="form-control" readonly="readonly" value="250.00" />
+                <span asp-validation-for="Employee.decreeBond" class="text-danger"></span>
+            </div>
+            <!--div class="form-group">
+                <label asp-for="Employee.Active" class="control-label"></label>
+                <input asp-for="Employee.Active" class="form-control" />
+                <span asp-validation-for="Employee.Active" class="text-danger"></span>
+            </div-->
+            <div class="form-group">
+                <label id="labelIgss" class="control-label"></label>
+                <label id="labelIrtra" class="control-label"></label>
+                <label id="labelBonoPat" class="control-label"></label>
+                <label id="labelSalarioTotal" class="control-label"></label>
+                <label id="labelSalarioLiquido" class="control-label"></label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+<script type="text/javascript">
+    function calcular() {
+
+        var salBase = document.getElementById("baseSalary").value;
+        var childNumber = document.getElementById("childrenNumber").value;
+        var bonoDecreto = document.getElementById("decreeBond").value;
+
+        var igss = salBase * 0.0483;
+        var irtra = salBase * 0.01;
+        var bonoPaternidad = 133 * childNumber;
+        var salarioTotal = parseInt(salBase) + parseInt(bonoPaternidad) + parseInt(bonoDecreto);
+        var salarioLiquido = salarioTotal - igss - irtra;
+
+        document.getElementById("labelIgss").innerText = " IGSS: " + igss;
+        document.getElementById("labelIrtra").innerText = " IRTRA: " + irtra;
+        document.getElementById("labelBonoPat").innerText = " Bono paternidad: " + bonoPaternidad;
+        document.getElementById("labelSalarioTotal").innerText = " Salario total: " + salarioTotal;
+        document.getElementById("labelSalarioLiquido").innerText = " Salario liquido: " + salarioLiquido;
+        //alert(igss);
+    }
+</script>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

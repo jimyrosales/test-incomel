@@ -1,0 +1,88 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = jimyTest
+build_property.RootNamespace = jimyTest
+build_property.ProjectDir = /Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Employees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbG95ZWVzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Employees/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbG95ZWVzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Employees/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbG95ZWVzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Employees/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbG95ZWVzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Employees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRW1wbG95ZWVzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Palindrome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFsaW5kcm9tZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Usuarios/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXN1YXJpb3MvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXN1YXJpb3MvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Usuarios/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXN1YXJpb3MvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXN1YXJpb3MvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXN1YXJpb3MvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/eduard/Documents/Proyectos VS/jimyTest/jimyTest/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2eoayytkwh
